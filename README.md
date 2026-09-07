@@ -209,7 +209,22 @@ This repository currently implements the **C++ waypoint-control component** of t
 full pipeline described above. It expects another ROS 2 node to generate and
 publish the `PoseArray`. The A* planner, scan-based obstacle integration, and map
 preprocessing discussed in the report are project context and are not implemented
-in `src/project2_controller.cpp`.
+in this package.
+
+## Code organization
+
+The controller is split by responsibility instead of being kept in one source file:
+
+| File | Responsibility |
+|---|---|
+| `include/turtlebot3_waypoint_controller/types.hpp` | Shared waypoint, robot-pose, and telemetry data types |
+| `include/turtlebot3_waypoint_controller/controller_math.hpp` | Public interface for geometry and controller math |
+| `src/controller_math.cpp` | Angle conversion, clamping, lookahead, and cross-track calculations |
+| `include/turtlebot3_waypoint_controller/telemetry_logger.hpp` | CSV logger interface |
+| `src/telemetry_logger.cpp` | Telemetry storage and CSV serialization |
+| `include/turtlebot3_waypoint_controller/odom_listener.hpp` | ROS controller node declaration and state |
+| `src/odom_listener.cpp` | Parameters, callbacks, command publication, and control loop |
+| `src/main.cpp` | ROS initialization and node startup |
 
 ## Requirements
 
