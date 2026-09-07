@@ -1,0 +1,10 @@
+build/
+install/
+log/
+*.csv
+.vscode/
+.idea/
+
+# Local source material retained outside the converted ROS package
+Project2*.py
+final code.zip
