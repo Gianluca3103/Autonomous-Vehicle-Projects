@@ -8,3 +8,4 @@ log/
 # Local source material retained outside the converted ROS package
 Project2*.py
 final code.zip
+tmp/
