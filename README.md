@@ -118,7 +118,7 @@ to metric coordinates for execution.
 
 ![Four A-star paths](docs/images/figure-05-astar-paths.jpg)
 
-*Figure 5 - A* paths for four start-goal configurations on the improved occupancy
+*Figure 5 - A-star paths for four start-goal configurations on the improved occupancy
 grid.*
 
 ## Grid and map coordinate conversion
