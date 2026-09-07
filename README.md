@@ -4,10 +4,7 @@ Custom ROS 2 navigation for a TurtleBot3 Burger, developed for the Autonomous
 Vehicles course in the M.Sc. Mechanical Engineering program at Politecnico di
 Milano (Academic Year 2025/2026).
 
-**Authors:** Gianluca Comellini and Alireza Omrani<br>
-**Professor:** Stefano Arrigoni
-
-This repository contains the C++ conversion of the project's waypoint controller.
+This repository contains the project's waypoint controller.
 The wider project described below combines SLAM-based mapping, a custom A* planner,
 online replanning, and direct velocity control without using the Nav2 planner or
 controller servers.
